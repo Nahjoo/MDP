@@ -1,0 +1,17 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+
+    <form method="POST">
+
+        <label for="ndc" >Connexion</label>
+        <input type="text" name="ndc" placeholder="login" value="{{ login }}">
+        <input type="text" name="mdp" placeholder="password" value="{{ pass }}">
+        <input type="submit" name="connexion" value='connecter'>
+
+    </form>
+
+    <div>{{ error }}</div>
+
+
+{% endblock %}

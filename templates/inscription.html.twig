@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+
+    <form method="POST">
+        
+        <label for="ndc" >Inscription</label>
+        <input type="text" name="ndc" placeholder="login1" value="{{ login }}">
+        <input type="text" name="mdp" placeholder="password1" value="{{ password }}">
+        <input type="submit" name="inscrit" value="ajout">
+        
+    </form>
+
+    <div>{{ error }}</div>
+    
+    
+    
+
+{% endblock %}

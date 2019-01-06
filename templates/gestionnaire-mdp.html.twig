@@ -1,0 +1,26 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+
+    <form method="POST">
+
+        <label>Afficher les mots de passe</label>
+        
+        <input type="submit" name="afficher" value="affiche" >
+
+
+        <label>Ajouter des mots de passe</label>
+        <input type="text" name="hh" value="{{ nom }}" placeholder="fortnite, outlook etc">
+        <input type="text" name="ndc" value="{{ login }}" placeholder="nom de compte">
+        <input type="text" name="mdp" value="{{ password }}" placeholder="mot de passe">
+        <input type="submit" name="ajouter" value="ajout">
+        
+
+    </form>
+
+    <div>{{ error }}</div>
+    
+
+
+
+{% endblock %}

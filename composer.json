@@ -1,0 +1,6 @@
+{
+    "name": "learn/twig",
+    "require": {
+        "twig/twig": "~2.6"
+    }
+}
